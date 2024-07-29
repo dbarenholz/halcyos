@@ -3,12 +3,15 @@
 type: rpm-ostree
 install:
   - zsh           # shell
-  - gparted       # partition manager (no flatpak)
-  - polkit-gnome  # replace polkit with one that works?
+  ## TODO: Figure out how to get gparted working from the .desktop file.
+  # Related: figure out how this entire polkit thing works; virt-manager has the same issue.
+  # - gparted       # partition manager (no flatpak)
+  # - polkit-gnome  # replace polkit with one that works?
 
   # Virtualisation with `qemu-kvm`
   # TODO: Figure out if I need extra polkit stuff to make this work.
   # TODO: Find an online link showing @virtualization group
+
   # - virt-install
   # - qemu-kvm
   # - qemu
