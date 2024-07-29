@@ -9,7 +9,7 @@ install:
   # Binaries for my scripts (see dotfiles repo)
   - slurp          # color-picker.sh, lock.sh
   - grim           # color-picker.sh, lock.sh
-  - imagemagick    # color-picker.sh, lock.sh
+  - ImageMagick    # color-picker.sh, lock.sh
   - wl-clipboard   # color-picker.sh
   - rofi           # completer.sh
   - jq             # lock.sh
