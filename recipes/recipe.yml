@@ -2,7 +2,9 @@ name: halcyos                             # ghcr.io/dbarenholz/<name>
 description: Daniël's personal OS image.  # image's metadata shows this
 
 # TODO : Find a way to get GPU working -- sericea-nvidia doesn't seem to do the trick out of the box
-base-image: ghcr.io/ublue-os/sericea-nvidia  # The base to build on
+# Issue I'm having: 2nd monitor does not work.
+# swaymsg shows it as disabled, telling it to enabled gives exit code 0 but doesn't do anything
+base-image: ghcr.io/ublue-os/sericea-main  # The base to build on
 image-version: 40                            # Version of the base to build on
 
 # Run these modules, in order
