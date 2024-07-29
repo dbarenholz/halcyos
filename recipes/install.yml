@@ -2,17 +2,10 @@
 
 type: rpm-ostree
 install:
-  # Terminal / Shell
-  - zsh
-  # Partition and disk management -- not available as flatpak
-  - gparted
-  # Binaries for my scripts (see dotfiles repo)
-  # - slurp          # color-picker.sh, lock.sh
-  # - grim           # color-picker.sh, lock.sh
-  # - ImageMagick    # color-picker.sh, lock.sh
-  # - wl-clipboard   # color-picker.sh
-  # - rofi           # completer.sh
-  # - jq             # lock.sh
+  - zsh           # shell
+  - gparted       # partition manager (no flatpak)
+  - polkit-gnome  # replace polkit with one that works?
+
   # Virtualisation with `qemu-kvm`
   # TODO: Figure out if I need extra polkit stuff to make this work.
   # TODO: Find an online link showing @virtualization group
