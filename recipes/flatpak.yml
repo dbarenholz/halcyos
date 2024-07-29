@@ -1,0 +1,47 @@
+# Taken from [Shale](<https://github.com/Craftidore/shale/blob/3a9354cf3344cd3c6fcdc568415d35cff465f0cd/config/common/03-common-flatpaks.yml>)
+type: default-flatpaks
+system:
+  repo-title: "Flathub (system-wide)"
+  install:
+    # Basic apps; files/browser/email
+    - org.gnome.Nautilus                         # File manager (replaces Thunar)
+    - org.mozilla.Thunderbird                    # Email client
+
+    - com.vivaldi.Vivaldi                        # Web browser (Chromium based) -- main browser
+    - org.mozilla.firefox                        # Web browser (Gecko based)    -- for checking CSS
+    - org.gnome.Epiphany                         # Web browser (WebKit based)   -- for checking CSS
+
+    - com.discordapp.Discord                     # I have friends who live too far away
+    - com.valvesoftware.Steam                    # Those friends play games sometimes
+
+    # Documents related
+    - md.obsidian.Obsidian                       # Obsidian is a gem
+    - org.gnome.SimpleScan                       # A document scanner that works with my Canon
+    - org.kde.okular                             # PDF reader
+    - com.github.jeromerobert.pdfarranger        # Merge PDFs together
+    # TODO: Ask Craftidore why they have both of these two
+    # - org.libreoffice.LibreOffice                # Libre office suite
+    - org.onlyoffice.desktopeditors              # Office suite better suited for MS interop
+
+    # Audio and Video related
+    - org.gnome.Loupe                            # Image viewer (next to imv)
+    - org.videolan.VLC                           # Video player
+    - com.github.iwalton3.jellyfin-media-player  # Jellyfin player
+
+    # Audio and video editing
+    - org.musescore.MuseScore                    # Create music scores
+    - org.gimp.GIMP                              # Image editor
+    - org.inkscape.Inkscape                      # Vector graphics editor
+    - org.audacityteam.Audacity                  # Basic audio editor
+
+    # Remaining tools that might be nice to have
+    - com.github.tchx84.Flatseal                 # Manage flatpak permissions in a GUI
+    - me.kozec.syncthingtk                       # Syncthing GUI
+    - org.pipewire.Helvum                        # Audio router GUI
+    # TODO: Decide if I want any of these
+    # - org.gnome.Connections                      # RDP and VNC
+    # - org.gnome.baobab                           # Disk space analyser ala SpaceSniffer
+# A flatpak repo can also be added without having to install flatpaks,
+# as long as one of the repo- fields is present
+user:
+  repo-name: flathub

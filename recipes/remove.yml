@@ -1,0 +1,4 @@
+type: rpm-ostree
+remove:
+  - firefox           # Remove in favor of flatpak
+  - firefox-langpacks # Remove dependency that doesn't get removed automatically

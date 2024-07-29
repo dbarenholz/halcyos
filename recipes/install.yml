@@ -1,0 +1,28 @@
+# Taken from [Shale](<https://github.com/Craftidore/shale/blob/3a9354cf3344cd3c6fcdc568415d35cff465f0cd/config/common/02-common-apps.yml>)
+
+type: rpm-ostree
+install:
+  # Terminal / Shell
+  - zsh
+  # Partition and disk management -- not available as flatpak
+  - gparted
+  # Binaries for my scripts (see dotfiles repo)
+  - slurp          # color-picker.sh, lock.sh
+  - grim           # color-picker.sh, lock.sh
+  - imagemagick    # color-picker.sh, lock.sh
+  - wl-clipboard   # color-picker.sh
+  - rofi           # completer.sh
+  - jq             # lock.sh
+  # Virtualisation with `qemu-kvm`
+  # TODO: Figure out if I need extra polkit stuff to make this work.
+  # TODO: Find an online link showing @virtualization group
+  # - virt-install
+  # - qemu-kvm
+  # - qemu
+  # - libvirt-daemon-config-network
+  # - libvirt-daemon-kvm
+  # - virt-manager
+  # - virt-viewer
+  # - libguestfs-tools
+  # - python3-libguestfs
+  # - virt-top
